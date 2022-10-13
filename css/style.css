@@ -1,0 +1,52 @@
+body{
+  background-color: brown;
+  color: white;
+}
+
+.sc-container, .ticket{
+  margin-top: 100px;
+  border-radius: 15px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, .5);
+  padding: 150px 200px;
+  text-align: center;
+  background-color: white;
+}
+
+label{
+  display: block;
+  margin-bottom: 20px;
+  color: brown;
+}
+
+input, select{
+  border-radius: 5px;
+  padding: 5px 10px;
+  text-align: center;
+  border: 1px solid brown;
+  background: white;
+  color: brown;
+  margin-bottom: 20px;
+}
+
+input::placeholder{
+  color: brown;
+}
+
+input:focus, 
+select:focus
+{
+  background-color: brown;
+  color: white;
+}
+
+input:focus::placeholder{
+  color: white;
+}
+.ticket{
+  opacity: 1;
+  transition: all 1s;
+}
+
+.hide{
+  opacity: 0;
+}

@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.2.2/css/bootstrap.min.css' integrity='sha512-CpIKUSyh9QX2+zSdfGP+eWLx23C8Dj9/XmHjZY2uDtfkdLGo0uY12jgcnkX9vXOgYajEKb/jiw67EYm+kBf+6g==' crossorigin='anonymous'/>
+  <link rel="stylesheet" href="css/style.css">
+  <title>js-biglietto-treno-form</title>
+</head>
+<body>
+  
+  <div class="container sc-container">
+    <div class="row">
+      <div class="col-4">
+        <label for="name">Nome e Cognome</label>
+        <input type="text" id="name" placeholder="Inserisci il nome">
+      </div>
+      <div class="col-4">
+        <label for="km">Chilometri da percorrere</label>
+        <input type="number" id="km" placeholder="Inserisci i chilometri">
+        <div>
+          <button type="button" class="btn btn-outline-success" id="genera">Genera</button>
+          <button type="button" class="btn btn-outline-success" id="annulla">Annulla</button>
+
+        </div>
+      </div>
+      <div class="col-4">
+        <label for="fascia">Fascia di età</label>
+        <select name="fascia" id="fascia">
+          <option value="minorenne">Minorenne</option>
+          <option value="maggiorenne" selected>Maggiorenne</option>
+          <option value="silver">Over 65</option>
+        </select>
+      </div>
+    </div>
+  </div>
+
+  <div class="container ticket hide">
+    <table class="table">
+      <thead>
+        <tr>
+          <th scope="col">Passeggero</th>
+          <th scope="col">Offerta</th>
+          <th scope="col">Carrozza</th>
+          <th scope="col">Codice CP</th>
+          <th scope="col">Costo biglietto</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td id="outputName"></td>
+          <td id="outputOffer"></td>
+          <td id="outputCoach"></td>
+          <td id="outputCP"></td>
+          <td id="outputPrice"></td>
+ 
+        </tr>
+
+      </tbody>
+    </table>
+  </div>
+
+
+
+
+
+
+
+
+
+  <script src="js/script.js"></script>
+</body>
+</html>
