@@ -1,12 +1,11 @@
-/* ELEMENTI */
-/* bottoni */
+
 const btnGenera = document.getElementById('genera');
 const btnReset = document.getElementById('annulla');
-/* input */
+
 const inputName = document.getElementById('name');
 const inputKm = document.getElementById('km');
 const inputRange = document.getElementById('fascia');
-/* output */
+
 const outputName = document.getElementById('outputName');
 const outputOffer = document.getElementById('outputOffer');
 const outputCoach = document.getElementById('outputCoach');
@@ -15,16 +14,14 @@ const outputPrice = document.getElementById('outputPrice');
 const ticketBox = document.querySelector('.ticket');
 
 
-/* DATI DI PARTENZA */
 let passengerName, totalKm, ageRange, totalPrice, coach, code;
 const juniorDiscount = .20;
 const silverDiscount = .40;
 const priceForKm = .21;
 
 
-/* EVENTI */
 btnGenera.addEventListener('click', function(){
-  /* valorizzo i dati */
+
   passengerName = inputName.value;
   totalKm = inputKm.value;
   ageRange = inputRange.value;
@@ -34,8 +31,7 @@ btnGenera.addEventListener('click', function(){
 
   let labelOffer = 'Biglietto standard';
 
-  console.log(totalPrice)
-  /* calcolo lo sconto */
+
   if(ageRange === 'minorenne') {
     totalPrice *= (1 - juniorDiscount);
     labelOffer = 'Sconto junior';
